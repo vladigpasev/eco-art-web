@@ -46,7 +46,7 @@
       <div class="max-w-md">
         <p class="mb-5 text-xl">Eco Art</p>
         <h1 class="mb-10 text-5xl font-bold">Всяка гледка е картина</h1>
-        <a href="http://localhost:3000/"
+        <a href="https://eco-art.xyz/"
           class="btn btn-primary bg-[#237a39] border-none hover:bg-[#237a39db] text-[#edf2ef]">Виж как</a>
       </div>
     </div>
@@ -62,11 +62,11 @@
             Ние сме организация, с главната цел да покажем на хората как изкуството и природата е форма на лечение. Организираме курсове по рисуване в екопътеките около Девин заедно с един от нашите художници и организаторка. Може да очаквате свежа атмосфера, спокойствие на ума и много забавления.   </p>
         </div>
         <div class="w-full lg:w-6/12">
-          <img class="lg:block hidden w-full" src="https://i.ibb.co/RjNH7QB/Rectangle-122-1.png"
+          <img class="lg:block hidden w-full" src="photos/IMG_7562.JPG"
             alt="people discussing on board" />
-          <img class="lg:hidden sm:block hidden w-full" src="https://i.ibb.co/16fPqrg/Rectangle-122-2.png"
+          <img class="lg:hidden sm:block hidden w-full" src="photos/IMG_7562.JPG"
             alt="people discussing on board" />
-          <img class="sm:hidden block w-full" src="https://i.ibb.co/Jxhpxh6/Rectangle-122.png"
+          <img class="sm:hidden block w-full" src="photos/IMG_7562.JPG"
             alt="people discussing on board" />
         </div>
       </div>
@@ -264,7 +264,7 @@
 
   <script>
 
-    fetch('http://localhost:3000/api/events/get')
+    fetch('https://eco-art.xyz/api/events/get')
       .then(response => response.json())
       .then(data => {
         const events = data.events;
@@ -282,11 +282,11 @@
                 <p class="text-base text-gray-700">${event.description}</p>
                 <div class="card-actions flex justify-between mt-5 items-center">
                   <div class='flex flex-col justify-center'>
-                    <div class='text-[#237a39] font-semibold text-lg'>${event.price} BGN</div>
+                    <div class='text-[#237a39] font-semibold text-lg'>${event.price} лв.</div>
                     <div class="text-[#237a39] font-light text-lg">${event.date}</div>
                   </div>
-                  <a href="http://localhost:3000/" class="btn btn-primary bg-[#237a39] border-none hover:bg-[#237a39db] text-[#edf2ef] rounded py-2 px-4 transition duration-300 ease-in-out">
-                    Get Started
+                  <a href="https://eco-art.xyz/" class="btn btn-primary bg-[#237a39] border-none hover:bg-[#237a39db] text-[#edf2ef] rounded py-2 px-4 transition duration-300 ease-in-out">
+                    Регистрация
                   </a>
                 </div>
               </div>
